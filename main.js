@@ -7,7 +7,7 @@ function tax_percentage(){
     return 'tax_percentage';
 }
 
-function checkForm() {
+function calculate() {
     // console.log ('this works!');     
     let amount = document.getElementById ('income').value;
     let territory = document.getElementById('province').value;
