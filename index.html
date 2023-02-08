@@ -21,36 +21,38 @@
         
         <div class="cell col1 form">
             <form action="">
-            <label for="amount">Price</label>
-            <input id="rate" type="text" name="rate" value="enter amount">
+            <label for="amount">Your income</label>
+            <input id="income" type="text" name="rate" value="">
             <br></br>
             <label for="province">Province</label>
-               <select name="languages" id="lang">
+               <select name="languages" id="province">
                   <option value="select">Select</option>
-                  <option value="alberta">Alberta</option>
-                  <option value="britishcolumbia">British Columbia</option>
-                  <option value="manitoba">Manitoba</option>
-                  <option value="newbrunswick">New Brunswick</option>
-                  <option value="newfoundland">Newfoundland</option>
-                  <option value="northwestterritories">Northwest Territories</option>
-                  <option value="novascotia">Nova Scotia</option>
-                  <option value="nunavut">Nunavut</option>
-                  <option value="ontario">Ontario</option>
-                  <option value="quebec">Quebec</option>
-                  <option value="princeedwardisland">Prince Edward Island</option>
-                  <option value="saskatchewan">Saskatchewan</option>
-                  <option value="yukon">Yukon</option>
+                  <option id="five" value="alberta">Alberta</option>
+                  <option id="five" value="British Columbia">British Columbia</option>
+                  <option id="five" value="manitoba">Manitoba</option>
+                  <option id="fifteen" value="newbrunswick">New Brunswick</option>
+                  <option id="fifteen" value="newfoundland">Newfoundland</option>
+                  <option id="five" value="northwestterritories">Northwest Territories</option>
+                  <option id="fifteen" value="novascotia">Nova Scotia</option>
+                  <option id="five" value="nunavut">Nunavut</option>
+                  <option id="thirteen" value="ontario">Ontario</option>
+                  <option id="five" value="quebec">Quebec</option>
+                  <option id="fifteen" value="princeedwardisland">Prince Edward Island</option>
+                  <option id="five" value="saskatchewan">Saskatchewan</option>
+                  <option id="five" value="yukon">Yukon</option>
                 </select>
             
             <br></br>
-            <input type="submit" value="Submit" />
+            <input id="button" type="button" onclick="checkForm()" value="Submit" />
             
-            <br></br>
+            <p id="result"> </p>
+
+            <!-- <br></br>
             <label for="amount">Budget</label>
             <input id="budget" type="text" name="budget" value="enter amount">
             
             <br></br>
-            <input type="button" onclick="compareForm()" value="compare">
+            <input type="button" onclick="compareForm()" value="compare"> -->
             </form>
         </div>
 
@@ -59,6 +61,8 @@
         </div>
 
     </div>
+
+    <script src="main.js"></script>
 </body>
 
 </html>
