@@ -10,14 +10,54 @@
 
 <body>
     <div class="grid">
-        <div class="cell col1">1 Column</div>
-        <div class="cell col1">1 Column</div>
-        <div class="cell col2 md2">2 Column</div>
-        <div class="cell col2 md2">2 Column</div>
-        <div class="cell col2 md2">2 Column</div>
-        <div class="cell col2 md2">2 Column</div>
-        <div class="cell col2 md2">2 Column</div>
-        <div class="cell col2 md2">2 Column</div>
+        
+        <div class="cell col1">
+            <h1> Sales Tax Calculator</h1>
+        </div>
+        
+        <div class="cell col1">
+            <h3> Calculate your expense before you spend and compare it against your budget.</h3>    
+        </div>
+        
+        <div class="cell col1 form">
+            <form action="">
+            <label for="amount">Price</label>
+            <input id="rate" type="text" name="rate" value="enter amount">
+            <br></br>
+            <label for="province">Province</label>
+               <select name="languages" id="lang">
+                  <option value="select">Select</option>
+                  <option value="alberta">Alberta</option>
+                  <option value="britishcolumbia">British Columbia</option>
+                  <option value="manitoba">Manitoba</option>
+                  <option value="newbrunswick">New Brunswick</option>
+                  <option value="newfoundland">Newfoundland</option>
+                  <option value="northwestterritories">Northwest Territories</option>
+                  <option value="novascotia">Nova Scotia</option>
+                  <option value="nunavut">Nunavut</option>
+                  <option value="ontario">Ontario</option>
+                  <option value="quebec">Quebec</option>
+                  <option value="princeedwardisland">Prince Edward Island</option>
+                  <option value="saskatchewan">Saskatchewan</option>
+                  <option value="yukon">Yukon</option>
+                </select>
+            
+            <br></br>
+            <input type="submit" value="Submit" />
+            
+            <br></br>
+            <label for="amount">Budget</label>
+            <input id="budget" type="text" name="budget" value="enter amount">
+            
+            <br></br>
+            <input type="button" onclick="compareForm()" value="compare">
+            </form>
+        </div>
+
+        <div class="cell col1">
+            <p></p>
+        </div>
+
     </div>
 </body>
 

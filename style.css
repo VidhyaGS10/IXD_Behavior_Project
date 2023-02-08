@@ -4,8 +4,16 @@
   grid-gap: 10px;
 }
 .cell {
-  background-color: rgb(255, 0, 0);
+  margin: auto;
+  padding: 10px;
+  /* background-color: rgb(253, 255, 138); */
   height: 100px;
+  text-align: center;
+  justify-content: end;
+}
+
+.form{
+  display: inline-block;
 }
 
 /* default - small devices */
