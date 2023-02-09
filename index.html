@@ -25,7 +25,7 @@
             <input id="income" type="text" name="rate" value="">
             <br></br>
             <label for="province">Province</label>
-               <select name="languages" id="province">
+               <select onselect="taxPercentage()" name="languages" id="province">
                   <option value="select">Select</option>
                   <option id="five" value="AB">Alberta</option>
                   <option id="five" value="BC">British Columbia</option>
@@ -47,12 +47,12 @@
             
             <p id="result"> </p>
 
-            <!-- <br></br>
+            <br></br>
             <label for="amount">Budget</label>
             <input id="budget" type="text" name="budget" value="enter amount">
             
             <br></br>
-            <input type="button" onclick="compareForm()" value="compare"> -->
+            <input type="button" onclick="compareForm()" value="compare">
             </form>
         </div>
 

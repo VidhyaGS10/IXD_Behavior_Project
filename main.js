@@ -3,8 +3,11 @@ function main (){
 }
 
 
+var five = document.getElementById('five').innerHTML;
+
+
 function tax_percentage(){
-    return 'tax_percentage';
+   
 }
 
 function calculate() {
@@ -17,6 +20,8 @@ function calculate() {
     result.innerHTML = text;
 }
 
-function budget () {
-
+function compareForm () {
+    let budget = document.getElementById('budget').value;
+    let text = "Budget checked!";
+    window.alert(text);
 }
