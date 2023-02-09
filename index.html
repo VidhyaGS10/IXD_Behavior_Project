@@ -2,67 +2,68 @@
 <html lang="en">
 
 <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Introducing the CSS Grid</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sales Tax Calculator</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-    <div class="grid">
-        
-        <div class="cell col1">
-            <h1> Savings Calculator</h1>
-        </div>
-        
-        <div class="cell col1">
-            <h3> Calculate your savings from your income!</h3>    
-        </div>
-        
-        <div class="cell col1 form">
-            <form action="">
-            <label for="amount">Your income</label>
-            <input id="income" type="text" name="rate" value="">
-            <br></br>
-            <label for="province">Province</label>
-               <select onselect="taxPercentage()" name="languages" id="province">
-                  <option value="select">Select</option>
-                  <option id="five" value="AB">Alberta</option>
-                  <option id="five" value="BC">British Columbia</option>
-                  <option id="five" value="MB">Manitoba</option>
-                  <option id="fifteen" value="NB">New Brunswick</option>
-                  <option id="fifteen" value="NL">Newfoundland</option>
-                  <option id="five" value="NT">Northwest Territories</option>
-                  <option id="fifteen" value="NS">Nova Scotia</option>
-                  <option id="five" value="NU">Nunavut</option>
-                  <option id="thirteen" value="ON">Ontario</option>
-                  <option id="five" value="QC">Quebec</option>
-                  <option id="fifteen" value="PE">Prince Edward Island</option>
-                  <option id="five" value="SK">Saskatchewan</option>
-                  <option id="five" value="YT">Yukon</option>
-                </select>
-            
-            <br></br>
-            <input id="button" type="button" onclick="calculate()" value="Submit" />
-            
-            <p id="result"> </p>
+  <div class="grid">
 
+    <div class="cell col1">
+      <h1> Sales Tax Calculator</h1>
+    </div>
+
+    <div class="cell col1">
+      <h3> Calculate the total amount you have to pay for your order!</h3>
+    </div>
+
+    <div class="cell col1 form">
+      <form action="">
+        <label for="amount">Purchase value</label>
+        <input id="income" type="text" name="rate" value="">
+        <br></br>
+        
+        <label for="province">Province</label>
+        <select onselect="taxPercentage()" name="languages" id="province">
+          <option value="select">Select</option>
+          <option id="five" value="AB">Alberta</option>
+          <option id="five" value="BC">British Columbia</option>
+          <option id="five" value="MB">Manitoba</option>
+          <option id="fifteen" value="NB">New Brunswick</option>
+          <option id="fifteen" value="NL">Newfoundland</option>
+          <option id="five" value="NT">Northwest Territories</option>
+          <option id="fifteen" value="NS">Nova Scotia</option>
+          <option id="five" value="NU">Nunavut</option>
+          <option id="thirteen" value="ON">Ontario</option>
+          <option id="five" value="QC">Quebec</option>
+          <option id="fifteen" value="PE">Prince Edward Island</option>
+          <option id="five" value="SK">Saskatchewan</option>
+          <option id="five" value="YT">Yukon</option>
+        </select>
+
+        <br></br>
+        <input id="button" type="button" onclick="calculate()" value="Submit" />
+
+        <p id="result"> </p>
+        <!-- 
             <br></br>
             <label for="amount">Budget</label>
             <input id="budget" type="text" name="budget" value="enter amount">
             
             <br></br>
-            <input type="button" onclick="compareForm()" value="compare">
-            </form>
-        </div>
-
-        <div class="cell col1">
-            <p></p>
-        </div>
-
+            <input type="button" onclick="compareForm()" value="compare"> -->
+      </form>
     </div>
 
-    <script src="main.js"></script>
+    <div class="cell col1">
+      <p></p>
+    </div>
+
+  </div>
+
+  <script src="script.js"></script>
 </body>
 
 </html>

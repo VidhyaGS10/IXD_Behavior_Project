@@ -1,27 +1,29 @@
-function main (){
+// Basic Global variables for the page.
+let taxRate;
+let totalTax;
 
-}
+// let budget = document.getElementById('budget').value;
 
 
-var five = document.getElementById('five').innerHTML;
-
-
-function tax_percentage(){
-   
-}
-
+// This is the function that takes the option from the dropdown from the user and it would pick a number for it. Followed by the calculation for the actual tax. 
 function calculate() {
-    // console.log ('this works!');     
-    let amount = document.getElementById ('income').value;
-    let territory = document.getElementById('province').value;
-    let final = document.getElementById('result');
-    // let text = "Your final price is " + "Hurray!";
-    let text = "Your final price is " + "CA$" + amount + " " + territory;
-    result.innerHTML = text;
-}
+  let taxPercentage = document.getElementById('province').value;
+  console.log(taxPercentage);
+  if (taxPercentage == "AB" || taxPercentage == "BC" || taxPercentage == "MB" || taxPercentage == "NT" || taxPercentage == "NU" || taxPercentage == "QC" || taxPercentage == "SK" || taxPercentage == "YT") {
+    taxRate = 0.05;
+  } else if (taxPercentage == "NB" || taxPercentage == "NL" || taxPercentage == "NS" || taxPercentage == "PE") {
+    taxRate = 0.15;
+  } else if (taxPercentage == "ON") {
+    console.log("on")
+    taxRate = 0.13;
+    // this is the code for Ontario
+  }
+  let amount = parseFloat(document.getElementById('income').value);
+  let final = document.getElementById('result').value;
 
-function compareForm () {
-    let budget = document.getElementById('budget').value;
-    let text = "Budget checked!";
-    window.alert(text);
+  // This following is the actual logic behind the functionality of the page.
+  let taxAmount = amount * taxRate;
+  totalTax = amount + taxAmount;
+  let text = "Your final price is " + "CA$" + " " + totalTax;
+  result.innerHTML = text;
 }
