@@ -4,7 +4,6 @@ let totalTax;
 
 // let budget = document.getElementById('budget').value;
 
-
 // This is the function that takes the option from the dropdown from the user and it would pick a number for it. Followed by the calculation for the actual tax. 
 function calculate() {
   let taxPercentage = document.getElementById('province').value;
